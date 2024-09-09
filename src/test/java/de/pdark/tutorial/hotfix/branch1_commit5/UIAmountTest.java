@@ -17,18 +17,28 @@ class UIAmountTest {
     }
 
     @Test
+    void test_0_99499() {
+        assertEquals(99, UIAmount.toUI(0.99499));
+    }
+
+    @Test
+    void test_0_995() {
+        assertEquals(100, UIAmount.toUI(0.995));
+    }
+
+    @Test
     void test_minus_1_0() {
         assertEquals(-100, UIAmount.toUI(-1.0));
     }
 
     @Test
     void test_minus_0_99499() {
-        assertEquals(99, UIAmount.toUI(0.99499));
+        assertEquals(-99, UIAmount.toUI(-0.99499));
     }
 
     @Test
     void test_minus_0_995() {
-        assertEquals(100, UIAmount.toUI(0.995));
+        assertEquals(-100, UIAmount.toUI(-0.995));
     }
 
 }
