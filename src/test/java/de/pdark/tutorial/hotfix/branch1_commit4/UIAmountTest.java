@@ -16,13 +16,6 @@ class UIAmountTest {
         assertEquals(0, UIAmount.toUI(0.0));
     }
 
-    /* TODO This test fails since the rounding code has a bug
-    @Test
-    void test_minus_1_0() {
-        assertEquals(-100, UIAmount.toUI(-1.0));
-    }
-    /**/
-
     @Test
     void test_0_99499() {
         assertEquals(99, UIAmount.toUI(0.99499));
@@ -32,5 +25,12 @@ class UIAmountTest {
     void test_0_995() {
         assertEquals(100, UIAmount.toUI(0.995));
     }
+
+    /* TODO This test fails since the rounding code has a bug
+    @Test
+    void test_minus_1_0() {
+        assertEquals(-100, UIAmount.toUI(-1.0));
+    }
+    /**/
 
 }
