@@ -1,4 +1,4 @@
-Example how to efficiently fix a production issue.
+Tutorial how to efficiently fix a production issue.
 
 The issue in question is a rounding error in the method
 `de.pdark.tutorial.hotfix.base.Order.collectOrder(User, long)`
