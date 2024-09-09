@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import de.pdark.tutorial.hotfix.branch1_commit4.UIAmount;
-
 class UIAmountTest {
 
     @Test
